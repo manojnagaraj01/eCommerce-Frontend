@@ -1,0 +1,15 @@
+.product-parent {
+    max-width: 300px;
+  height: 349px;
+  border: 3px solid #f6f7f8;
+  border-radius: 4px;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+img{
+    max-width: 236px;
+    height: 153px;
+}

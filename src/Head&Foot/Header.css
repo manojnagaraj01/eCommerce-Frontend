@@ -1,0 +1,100 @@
+/* Header.css */
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  color: #333;
+  height: 100px;
+}
+.logo{
+    width: 20%;
+}
+.logo img{
+    width: 100%;
+}
+
+.search-container {
+  position: relative;
+  width: 300px; /* Adjust as needed */
+}
+
+.search-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-input {
+  padding: 8px;
+  margin-right: 8px;
+}
+
+.search-button {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.suggestions-list li {
+  padding: 8px;
+  cursor: pointer;
+}
+
+.suggestions-list li:hover {
+  background-color: #f0f0f0;
+}
+
+.dropdown-item {
+  padding: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+.notification-icon,
+.profile {
+  cursor: pointer;
+  position: relative;
+}
+
+.notification-dropdown,
+.profile-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  z-index: 1;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification-scroll {
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+.notification-message,
+.profile-option {
+  padding: 5px;
+  cursor: pointer;
+  color: #333;
+}
+
+/* Add additional styles as needed */
+

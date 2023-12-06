@@ -1,0 +1,79 @@
+/* SliderSignin.css */
+.slider-container {
+    width: 100%;
+    padding: 20px 0px;
+    background: transparent linear-gradient(67deg, #E71D3A 0%, #ECC7C1 45%, #EFCAC4 58%, #E4BDB8 70%, #42A8FE 100%) 0% 0% no-repeat padding-box;
+    height: 20rem;
+}
+  
+/* Styling for each slide */
+.slick-slide {
+    transition: transform 1s ease-in-out; 
+}
+.slider-parent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    height: 15rem;
+}
+  /* Styling for the image */
+.slider-image{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    
+}
+.sli img{
+    width: 200px;
+    height: 10rem;
+}
+  /* Styling for the text */
+.slider-content{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    flex-direction: column;
+    height: 10rem;
+}
+.slider-content h2 , .slider-content p{
+    color: #fff;
+    padding: 0px 20px;
+}
+.slick-dots{
+    position: absolute;
+    bottom: -30px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    height: 0px;
+}
+.slick-dots li{
+    background:none ;
+    width: 5px;
+    height: 5px;
+}
+.slick-dots li button::before{
+    background: none;
+    color: #fff;
+    content: '■';
+
+}
+.slick-dots li.slick-active button::before{
+    color: #fff;
+    opacity: 1;
+    list-style: square;
+    content: '◆';
+    font-size: 10px;
+    /* padding: -20px; */
+}
+.rotate-dots .slick-dots {
+    transform: rotate(-360deg);
+    transition: transform 1s ease-out;
+    /* margin-top: 20px; */
+    background: none;
+}

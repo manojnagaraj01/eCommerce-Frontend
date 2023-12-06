@@ -1,0 +1,36 @@
+/* Base styles for screens above 768px */
+.carousel{
+    background:white;
+}
+.SliderPro {
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0.6rem;
+    top: 1rem;
+    position: relative;
+    height: 19rem;
+    overflow: hidden;
+    background: transparent linear-gradient(67deg, #E71D3A 0%, #ECC7C1 45%, #EFCAC4 58%, #E4BDB8 70%, #42A8FE 100%) 0% 0% no-repeat padding-box;
+  }
+  
+  .SliderImg {
+    width: 100%;
+    /* top: 5rem; */
+    height: 17rem;
+    border-radius: 0.6rem;
+  }
+  
+  /* Media query for screens below 768px */
+@media (max-width: 768px) {
+    .SliderPro {
+      width: 88%;
+      height: 9rem;
+      top: 0.3rem;
+      bottom: 0.3rem;
+    }
+    
+    .SliderImg {
+      max-width: 100%;
+      height:7rem;
+    }
+  }

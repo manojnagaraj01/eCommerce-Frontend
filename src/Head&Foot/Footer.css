@@ -1,0 +1,36 @@
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+} 
+.footer-section {
+    flex: 1;
+} 
+.footer-section h2 {
+    font-size: 1.2rem;
+    color: lightblue;
+}
+.footer-section h2:hover{
+    color: red;
+}
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+.footer-section ul li {
+    margin-bottom: 8px;
+}
+.footer-section.copyright {
+    text-align: center;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.footer-section.copyright p {
+    font-size: 0.8rem;
+}
+  
