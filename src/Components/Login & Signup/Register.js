@@ -53,7 +53,6 @@ const Registration = () => {
       .replace(/\D/g, "")
       .slice(0, 10);
       dispatch(setMobileNumber(sanitizedMobileNumber))
-      // dispatch(setIsValidMobileNumber(sanitizedMobileNumber)); // Check if mobile number is 10 digits
   };
 
   const handleSubmit = async (e) => {
@@ -61,7 +60,6 @@ const Registration = () => {
   
     if (validateForm()) {
       try {
-        // Make registration or login API call based on loginToggle
         const apiEndpoint = loginToggle
           ? 'http://localhost:8080/api/auth/login'
           : 'http://localhost:8080/api/auth/register';
@@ -71,16 +69,13 @@ const Registration = () => {
           email,
           mobileNumber,
           password,
-          // Additional data you may want to send
         });
   
-        // Assuming your API returns a success message
         dispatch(setSuccessMessage(response.data.message));
   
         console.log('API Response:', response.data);
       } catch (error) {
         console.error('API Error:', error.response?.data || error.message);
-        // Assuming your API returns an error message
         dispatch(setErrors(error.response?.data.message || 'An error occurred'));
       }
     } else {
@@ -105,7 +100,7 @@ const Registration = () => {
           <div className="notification">
             <div className="notification__body">
               <img
-                src="assets/check-circle.svg" // Make sure to replace this with the correct path to your check-circle.svg
+                src="" 
                 alt="Success"
                 className="notification__icon"
               />

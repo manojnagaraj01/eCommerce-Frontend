@@ -1,16 +1,12 @@
-// Import necessary libraries
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import "./Accessories.css"
 const Accessories = () => {
-  // State to store product details
   const [products, setProducts] = useState([]);
   console.log(products)
-  // API endpoint
   const apiUrl = 'http://localhost:8080/api/product/productdetails';
 
   useEffect(() => {
-    // Function to fetch data from the API
     Axios.get(apiUrl)
     .then((resp)=>{
       // console.log(resp.data.productData)
@@ -20,9 +16,8 @@ const Accessories = () => {
       console.log(err)
     })
 
-    // Call the fetchData function
     
-  }, []); // The empty dependency array ensures that useEffect runs only once (similar to componentDidMount)
+  }, []); 
 
   return (
     <div>
