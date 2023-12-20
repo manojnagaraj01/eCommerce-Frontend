@@ -12,7 +12,7 @@ function Mobile() {
   // })
   // console.log(state)
   // const Navi = useNavigate()
-  const apiUrl = "http://localhost:9000/api/v1/product/allproduct";
+  const apiUrl = "https://ecom-mcpa.onrender.com/api/v1/product/allproduct";
 
   useEffect(() => {
     Axios.get(apiUrl)

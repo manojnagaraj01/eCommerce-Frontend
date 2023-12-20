@@ -98,7 +98,7 @@ export default function Header() {
     
   }
   const carthandler = async() => {
-    await axios.get("http://localhost:9000/api/v1/auth/getcartitems", {
+    await axios.get("https://ecom-mcpa.onrender.com/api/v1/auth/getcartitems", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("iShop")}`,
       },

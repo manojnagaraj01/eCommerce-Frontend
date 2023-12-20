@@ -54,7 +54,7 @@ const Dynamic = () => {
       setIsAddingToCart(true);
 
       await axios.post(
-        "http://localhost:9000/api/v1/auth/addcart",
+        "https://ecom-mcpa.onrender.com/api/v1/auth/addcart",
         {
           cart: [
             {
