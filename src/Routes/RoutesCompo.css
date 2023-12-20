@@ -13,7 +13,7 @@
 .listBar-parent{
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 500;
     backdrop-filter: blur(6px);
     width: 100%;
     display: flex;
@@ -82,7 +82,12 @@
 
 /* Additional styles as needed */
  
-  
+@media screen and (max-width:599px) {
+    .listBar-parent{
+        display: none;
+    }
+    
+}
   
   
   

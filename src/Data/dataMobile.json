@@ -1,0 +1,152 @@
+[
+  {
+    "title": "Samsung Galaxy M13",
+    "category": "Mobile",
+    "price": 25589,
+    "product": "Mobile",
+    "description": "Samsung Galaxy M13 (Aqua Green, 4GB, 64GB Storage) | 6000mAh Battery | Upto 8GB RAM with RAM Plus ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/I/81fVPmkBsIL._SX569_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/I/71OVC3S4f7L._SX679_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/I/613DKMiqeIL._SY741_.jpg"
+    },
+    "quantity": 1,
+    "brand": "SAMSUNG",
+    "rating": 4
+  },
+  {
+    "title": "Redmi 12C",
+    "category": "Mobile",
+    "price": 25567,
+    "product": "Mobile",
+    "description": "Redmi 12C (Matte Black, 4GB RAM, 64GB Storage) | High Performance Mediatek Helio G85 | Big 17cm(6.71) HD+ Display with 5000mAh(typ) Battery ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/I/81guvfQzeVL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/I/71K8BtWSh3L._AC_SL1500_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/I/81HIO1a4fUL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "REDMI",
+    "rating": 4
+  },
+  {
+    "title": "Oppo A79 5G",
+    "category": "Mobile",
+    "price": 25900,
+    "product": "Mobile",
+    "description": "Oppo A79 5G (Glowing Green, 8GB RAM, 128GB Storage) | 5000 mAh Battery with 33W SUPERVOOC Charger | 50MP AI Rear Camera | 6.72' FHD+ 90Hz Display | with No Cost EMI/Additional Exchange Offers       ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81fNK5+o63L._SX679_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71F2jnVGQHL._SX569_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/91uqwtbnf1L._SX569_.jpg"
+    },
+    "quantity": 1,
+    "brand": "OPPO",
+    "rating": 4
+  },
+  {
+    "title": "vivo Y200 5G",
+    "category": "Mobile",
+    "price": 25231,
+    "product": "Mobile",
+    "description": "vivo Y200 5G (Desert Gold, 8GB RAM, 128GB Storage) with No Cost EMI/Additional Exchange Offers               ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/6154Ql4G0BL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/41Ycv6Z98AL._SX569_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51qFPfPBbKL._SX569_.jpg"
+    },
+    "quantity": 1,
+    "brand": "VIVO",
+    "rating": 4
+  },
+  {
+    "title": "Samsung Galaxy M13",
+    "category": "Mobile",
+    "price": 24854,
+    "product": "Mobile",
+    "description": "Samsung Galaxy M13 (Aqua Green, 4GB, 64GB Storage) | 6000mAh Battery | Upto 8GB RAM with RAM Plus       ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81fVPmkBsIL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81bTWwVkuNL._SX569_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71PsyfLvK+L._SY606_.jpg"
+    },
+    "quantity": 1,
+    "brand": "SAMSUNG",
+    "rating": 4
+  },
+  {
+    "title": "Apple iPhone 15",
+    "category": "Mobile",
+    "price": 27000,
+    "product": "Mobile",
+    "description": "Apple iPhone 15 (128 GB)",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71d7rfSl0wL._AC_SL1500_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61f4dTush1L._AC_SL1500_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81BnjSLm2oL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "APPLE",
+    "rating": 4
+  },
+  {
+    "title": "Samsung Galaxy S22 Ultra 5G ",
+    "category": "Mobile",
+    "price": 26000,
+    "product": "Mobile",
+    "description": "Samsung Galaxy S22 Ultra 5G (Burgundy, 12GB, 256GB Storage) with No Cost EMI/Additional Exchange Offers",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71J8tz0UeJL._AC_SL1500_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51TUyA8hXWL._AC_SL1500_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71esKKaTf8L._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "SAMSUNG",
+    "rating": 4
+  },
+  {
+    "title": "Samsung Galaxy S23 FE 5G",
+    "category": "Mobile",
+    "price": 25668,
+    "product": "Mobile",
+    "description": "Samsung Galaxy S23 FE 5G (Mint, 8GB, 128GB Storage)       ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71qGismu6NL._SX679_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71lALgeTpUL._SX569_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/7140JYHBn4L._SX569_.jpg"
+    },
+    "quantity": 1,
+    "brand": "SAMSUNG",
+    "rating": 4
+  },
+  {
+    "title": "iQOO Z7 Pro 5G ",
+    "category": "Mobile",
+    "price": 23000,
+    "product": "Mobile",
+    "description": "iQOO Z7 Pro 5G (Blue Lagoon, 8GB RAM, 256GB Storage) | 3D Curved AMOLED Display | 4nm MediaTek Dimesity 7200 5G Processor | 64MP Aura Light OIS Camera | Segment's Slimmest & Lightest Smartphone               ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61Id6WJDWqL._AC_SL1500_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61fd1yUJ6kL._AC_SL1500_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71MUvQYhSOL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "IQOO",
+    "rating": 4
+  },
+  {
+    "title": "Apple iPhone 15 Pro Max",
+    "category": "Mobile",
+    "price": 40000,
+    "product": "Mobile",
+    "description": "Apple iPhone 15 Pro Max(256 GB) - Natural Titanium               ",
+    "images":{
+        "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81dT7CUY6GL._AC_UF894,1000_QL80_FMwebp_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71TSx9D2BVL._AC_SL1500_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81MDZsYTIoL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "APPLE",
+    "rating": 4
+  }
+]

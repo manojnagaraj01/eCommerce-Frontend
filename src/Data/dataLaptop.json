@@ -1,0 +1,171 @@
+[
+  {
+    "title": "Samsung Galaxy Book2 (NP750)",
+    "category": "Laptop",
+    "price": 50000,
+    "product": "Laptop",
+    "description": "Samsung Galaxy Book2 (NP750) Intel 12th Gen core i5 39.6cm (15.6') FHD Thin & Light Laptop (8 GB/512 GB/Windows 11/MS Office/Backlit Keyboard/Finger Print Reader/Silver/1.55Kg), NP750XED-KC1IN",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71VETao+NEL._AC_SL1500_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61XZlkNNdqL._AC_SL1500_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/6190bIp7b0L._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "SAMSUNG",
+    "rating": 5
+  },
+  {
+    "title": "ASUS VivoBook 15",
+    "category": "Laptop",
+    "price": 40800,
+    "product": "Laptop",
+    "description": "ASUS VivoBook 15 (2021), 15.6-inch (39.62 cm) HD, Dual Core Intel Celeron N4020, Thin and Light Laptop (4GB RAM/256GB SSD/Integrated Graphics/Windows 11 Home/Transparent Silver/1.8 Kg), X515MA-BR011W",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71lYhcc++AL._AC_SL1500_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71uqmN2b2UL._AC_SL1500_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61MTpiV8JPL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "ASUS",
+    "rating": 4
+  },
+  {
+    "title": "HP Laptop 15s",
+    "category": "Laptop",
+    "price": 45000,
+    "product": "Laptop",
+    "description": "HP Laptop 15s, 12th Gen Intel Core i3-1215U, 15.6-inch (39.6 cm), FHD, 8GB DDR4, 512GB SSD, Intel UHD Graphics, Backlit KB, Thin & Light, Dual Speakers (Win 11, MSO 2021, Silver, 1.69 kg), fq5007TU",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71Blj59DzzL._AC_SL1500_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81kkL7JWhWL._AC_SL1500_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81x4iV5bK0L._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "HP",
+    "rating": 5
+  },
+  {
+    "title": "Lenovo IdeaPad Flex 5",
+    "category": "Laptop",
+    "price": 42000,
+    "product": "Laptop",
+    "description": "Lenovo IdeaPad Flex 5 Intel Core i5-1235U 14'(35.56cm) WUXGA IPS 2-in-1 Laptop (8GB/512GB SSD/Win 11/Office 2021/Backlit KB/Fingerprint/FHD Camera/Alexa/3 Month Game Pass/Storm Grey/1.5Kg),82R70068IN",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61JI59yMJHL._AC_SL1500_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61Xv-vKmcyL._AC_SL1500_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61zvOjjAYpL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "LENOVO",
+    "rating": 4
+  },
+  {
+    "title": "ASUS TUF Gaming F15",
+    "category": "Laptop",
+    "price": 41000,
+    "product": "Laptop",
+    "description": "ASUS TUF Gaming F15, 15.6'(39.62 cms) FHD 144Hz, Intel Core i7-11800H 11th Gen, 4GB NVIDIA GeForce RTX 3050 Ti, Gaming Laptop (16GB/1TB SSD/Win 11/MSO/90WHrs Battery/Black/2.30 Kg), FX506HE-HN385WS",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81UWgnVKDBL._AC_SL1500_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81x9vxrPFwS._AC_SL1500_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71eZV85uR0L._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "ASUS",
+    "rating": 4
+  },
+  {
+    "title": "Apple MacBook Air",
+    "category": "Laptop",
+    "price": 55000,
+    "product": "Laptop",
+    "description": "Apple MacBook Air Laptop M1 chip, 13.3-inch/33.74 cm Retina Display, 8GB RAM, 256GB SSD Storage, Backlit Keyboard, FaceTime HD Camera, Touch ID. Works with iPhone/iPad; Silver",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71TPda7cwUL._AC_UF1000,1000_QL80_FMwebp_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/91KREQM8C6L._SS126_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/6155Fp7yaSL._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "APPLE",
+    "rating": 5
+  },
+  {
+    "title": "Xiaomi Notebook Ultra Max",
+    "category": "Laptop",
+    "price": 43000,
+    "product": "Laptop",
+    "description": "Xiaomi Notebook Ultra Max 11th Gen Intel Core i5-11320H Thin & Light (16GB/512GB SSD/Iris Xe Graphics/15.6' 3.2K Resolution/Win 11/Thunderbolt 4/MS Office '21/Fingerprint Sensor/1.7 Kg)",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/710aJMxsUXL._AC_SL1500_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61WNbF4eaXL._AC_SL1500_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61ril87wF6L._AC_SL1500_.jpg"
+    },
+    "quantity": 1,
+    "brand": "XIAOMI",
+    "rating": 4
+  },
+  {
+    "title": "Dell Inspiron 3530",
+    "category": "Laptop",
+    "price": 47000,
+    "product": "Laptop",
+    "description": "Dell Inspiron 3530 Laptop, Intel Core i5-1335U Laptop/ 8GB/ 1TB SSD/ 15.6' (39.62cm) FHD AG 120Hz 250 nits Display/Backlit Keyboard/Platinum Silver/Win 11 + MSO'21/15 Month McAfee/ 1.66kg",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81QCRdxIRLL._SX522_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/615NBEneGbL._SX522_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/616dC0xuaRL._SX522_.jpg"
+    },
+    "quantity": 1,
+    "brand": "DELL",
+    "rating": 5
+  },
+  {
+    "title": "HONOR [SmartChoice] MagicBook X14",
+    "category": "Laptop",
+    "price": 39000,
+    "product": "Laptop",
+    "description": "HONOR [SmartChoice] MagicBook X14 (2023), 12th Gen Intel Core i5-12450H (16GB/512GB NVMe SSD, 14-inch (35.56 cm) FHD IPS Anti-Glare T&L Laptop/Win 11/Backlit Keyboard/Fingerprint Login/1.43Kg), Gray",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/711CHodGwBL._SX679_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/71qaVIPLuNL._SX522_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/81GezhVdE7L._SX522_.jpg"
+    },
+    "quantity": 1,
+    "brand": "HONOR",
+    "rating": 4
+  },
+  {
+    "title": "MSI Modern 14",
+    "category": "Laptop",
+    "price": 49900,
+    "product": "Laptop",
+    "description": "MSI Modern 14, Intel 12th Gen. i7-1255U, 36CM FHD 60Hz Laptop (16GB/512GB NVMe SSD/Windows 11 Home/Intel Iris Xe Graphics/Classic Black/1.4Kg), C12M-459IN",
+    "images": {
+      "imageOne": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61yN+3Z7WtL._SX522_.jpg",
+      "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/614BojM6TaL._SX522_.jpg",
+      "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51nhsuFjoHL._SX522_.jpg"
+    },
+    "quantity": 1,
+    "brand": "MSI",
+    "rating": 4
+  },
+  {
+    "_id": "657c66f70b89671ac73ea2fc" ,
+    "title": "Leriya Fashion Shirts for Men",
+    "slug": "leriya-fashion-shirts-for-men",
+    "price": { "$numberInt": "700" },
+    "description": "Leriya Fashion Shirts for Men || Rayon Tropical Leaf Printed & Preppy Short Sleeves || Cool Shirts for Men || Shirts for Men Regular Fit || Summer Wear Shirts for Men",
+    "category": "Fashion",
+    "brand": "Leriya",
+    "quantity": { "$numberInt": "1" },
+    "images": [
+      {
+        "imageone": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51yUI8YGhoL._SX569_.jpg",
+        "imageTwo": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/61ym6AG2yqL._SY500_.jpg",
+        "imageThree": "https://m.media-amazon.com/images/W/MEDIAX_792452-T1/images/I/51QUF7yxcRL._SY500_.jpg"
+      }
+    ],
+    "color": "White",
+    "rating": { "$numberInt": "0" }
+  }
+]

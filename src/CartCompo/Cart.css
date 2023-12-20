@@ -1,0 +1,36 @@
+
+.cart-header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+} 
+
+
+.cart-data{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+
+.cart-one{
+    width: 40%;
+    display: flex;
+}
+
+.cart-two{
+    width: 10%;
+}
+.cart-three{
+    width: 15%;
+    display: flex; 
+    align-items: center;
+}
+.cart-four{
+    width: 15%;
+}
+
+.cart-shopping{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}

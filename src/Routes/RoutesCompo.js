@@ -6,12 +6,17 @@ import Fashion from '../Components/Fashion';
 import Kitchen from '../Components/Kitchen';
 import Laptops from '../Components/Laptops';
 import Mobile from '../Components/Mobile';
-import Header from '../Head&Foot/Header';
-import Footer from '../Head&Foot/Footer';
 import { NavLink } from 'react-router-dom';
 import "./RoutesCompo.css"
 import TocIcon from '@mui/icons-material/Toc';
 import ClearIcon from '@mui/icons-material/Clear';
+import Dynamic from '../DynamicSet/Dynamic';
+import Header from '../Head&Foot/Header';
+import LoginSignup from '../Login & Signup/Login';
+import Footer from '../Head&Foot/Footer';
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import CartItems from '../CartCompo/CartItems';
 function RoutesCompo() {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -20,13 +25,26 @@ function RoutesCompo() {
      };
   return (
     <>
-    <Header/>
         <div>   
             <button className="navbar-toggle" onClick={handleNavbar}>
                 {navbarOpen ? <ClearIcon/> : <TocIcon/>}
             </button>
         </div>
+        <ToastContainer
+          position="top-right"
+          
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light"
+        />
     <BrowserRouter>
+        <Header/>
         <div className="listBar-parent">
             <div className={`listBar ${navbarOpen ? 'show' : '' }`}>
                 <ul className="navContainer">
@@ -46,10 +64,14 @@ function RoutesCompo() {
             <Route path='/kitchen' element={<Kitchen/>}/>
             <Route path='/laptops' element={<Laptops/>}/>
             <Route path='/mobile' element={<Mobile/>}/>
+            <Route path='/profile' element={<LoginSignup/>}/>
+            <Route path='/:id' element={<Dynamic/>}/>
+            <Route path='/cart' element={<CartItems/>}/>
+            
         </Routes>
+        <Footer/>
     </BrowserRouter>
     
-    <Footer/>
     </>
   )
 }

@@ -1,18 +1,17 @@
-// import logo from ./logo.svg';
-import { Provider } from 'react-redux';
-import './App.css';
-import RoutesCompo from './Routes/RoutesCompo';
-import store from './Redux/Store/Store';
-// import Registration from './Components/Login & Signup/Register';
+import { Provider } from "react-redux";
+import RoutesCompo from "./Routes/RoutesCompo";
+import store from "./Store/configureStore";
+
+// import LoginSignup from './Login & Signup/Login';
 function App() {
   return (
     <>
+    
       <Provider store={store}>
-        <RoutesCompo/>
-
-      {/* <Registration/> */}
+        
+        <RoutesCompo />
       </Provider>
-      {/* <Navbar/> */}
+      {/* <Cart/> */}
     </>
   );
 }

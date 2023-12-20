@@ -1,70 +1,74 @@
 import React, { useEffect, useState } from 'react';
 import Axios from 'axios';
 import "./Accessories.css"
+import {Link} from 'react-router-dom';
+import { useSelector } from 'react-redux';
+// import {  useParams } from 'react-router-dom';
+
 const Accessories = () => {
   const [products, setProducts] = useState([]);
-  console.log(products)
-  const apiUrl = 'http://localhost:8080/api/product/productdetails';
+  const state=useSelector(({data})=>{
+    return data
+  })
+  console.log(state)
+  // const Navi = useNavigate()
+  const apiUrl = "http://localhost:9000/api/v1/product/allproduct";
 
   useEffect(() => {
     Axios.get(apiUrl)
-    .then((resp)=>{
-      // console.log(resp.data.productData)
-      setProducts(resp.data.productData)
-    })
-    .catch((err)=>{
-      console.log(err)
-    })
+      .then((response) => {
+        const data = response.data;
+        const productsData = data.map((item) => ({
+          _id : item._id,
 
-    
-  }, []); 
+          title: item.title,
+          images: item.images.map((img) => ({
+            imageOne: img.imageOne,
+          })),
+          rating: item.rating,
+          price: item.price,
+          category: item.category,
+        }));
+        console.log(productsData);
+        setProducts(productsData);
+      })
+      .catch((error) => {
+        console.error("Error fetching data:", error);
+      });
+  }, []);
 
   return (
-    <div>
-      
-        <div>
-          {/* {products.map((product) => (
-            <div key={product._id.$oid}>
-              <h1>{product.productTitle}</h1>
-              <p>{product.description}</p>
-              <p>Price: ${product.price.$numberInt}</p>
-              Render images
-              <div>
-                <img src={product.imageOne} alt="Product Image 1" />
-                <img src={product.imageTwo} alt="Product Image 2" />
-                <img src={product.imageThree} alt="Product Image 3" />
-              </div>
-              Add more details as needed
-            </div>
-          ))} */}
-          <div>
-          {/* {
-            products.map(({brand,category,description,imageOne,imageThree,imageTwo,price,product,productTitle,quantity})=>{
-                return <div>
-                    <i>{brand}</i>
-                  </div>
-            })
-          } */}
-          </div>
-          <div>
+    <div className='product'>
+        <div className='product-container'>
               {
-                products.map(({productTitle, imageOne, rating, price},index)=>{
-                  return <div key={index} className='product-parent'>
-                      <div>
-                        <img src={imageOne} alt='imageOne'/>
-                        <p>{productTitle}</p>
-                      </div>
-                      <div>
-                        <h5>{rating.$numberDecimal}</h5>
-                        <h5>{price}</h5>
-                      </div>
-
-
-                  </div>
+                products.filter((data)=> data.category === "Accessories")
+                .map((productdetails, index) => {
+                  return (
+                    <div key={index} className="product-parent">
+                      <Link to={`/${productdetails._id}`}>
+                        <div>
+                          <div>
+                            {/* Assuming images is an array */}
+                            {productdetails.images.map((img, imgIndex) => (
+                              <img
+                                key={imgIndex}
+                                src={img.imageOne}
+                                alt={`Product ${index + 1} ${imgIndex + 1}`}
+                              />
+                            ))}
+                          </div>
+                          <p>{productdetails.title}</p>
+                        </div>
+                        <div>
+                          <h5>{productdetails.rating}</h5>
+                          <h5>{productdetails.price}</h5>
+                        </div>
+                      </Link>
+                    </div>
+                  );
                 })
               }
           </div>
-        </div>
       
     </div>
   );
