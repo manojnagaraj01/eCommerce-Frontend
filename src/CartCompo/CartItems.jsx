@@ -11,7 +11,7 @@ function CartItems() {
 
 
   useEffect(() => {
-    Axios.get("http://localhost:9000/api/v1/auth/getcartitems", {
+    Axios.get("https://ecom-mcpa.onrender.com/api/v1/auth/getcartitems", {
       headers: {
         authorization: `Bearer ${localStorage.getItem("iShop")}`,
       },
@@ -50,7 +50,7 @@ function CartItems() {
     // console.log('cartid',cartid)
 
     try {
-      const response = await Axios.delete(`http://localhost:9000/api/v1/auth/${cart[0]?.cartid}`, {
+      const response = await Axios.delete(`https://ecom-mcpa.onrender.com/api/v1/auth/${cart[0]?.cartid}`, {
         headers: {
           authorization: `Bearer ${localStorage.getItem("iShop")}`,
         },
