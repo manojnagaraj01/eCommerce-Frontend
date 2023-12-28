@@ -37,4 +37,15 @@
     font-size: 18px;
     margin: 0 10px;
   }
-  
+
+  @media (max-width: 768px){
+    .image-slider {
+      flex-direction: column;
+      justify-content: center;
+    }
+    .image-slider img {
+      max-width: 150px; /* Adjust the image size as needed */
+      height: auto;
+      margin: auto;
+    }
+  }

@@ -1,12 +1,31 @@
 
 import React from "react";
 import ReactDOM from "react-dom"
-import paypal from "paypal-rest-sdk"
-const PayPalButton = paypal.Buttons.driver("react", { React, ReactDOM });
-function YourComponent() {
-  const createOrder = (data) => {
+// import paypal from ""
+import { loadScript } from "@paypal/paypal-js";
+let paypal;
+
+try {
+    paypal = await loadScript({ clientId: "AVvhU0Q9LyPM0ZJdZG2uxJOZK6kn2yEqgSM-t6Acanvl1ahxhM-zWK-hpZmKcxVgJuawFOYLbnDs3maH" });
+} catch (error) {
+    console.error("failed to load the PayPal JS SDK script", error);
+}
+
+if (paypal) {
+    try {
+        await paypal.Buttons().render("#your-container-element");
+
+    } catch (error) {
+        console.error("failed to render the PayPal Buttons", error);
+    }
+}
+const PayPalButton = await paypal.Buttons.driver("react", { React, ReactDOM });
+
+function PayPal(props) {
+  const {cart}=props
+  const createOrder = async (data) => {
     // Order is created on the server and the order id is returned
-    return fetch("http://localhost:9000/api/orders", {
+    return await fetch("http://localhost:9000/api/v1/order/createorder", {
       method: "POST",
        headers: {
         "Content-Type": "application/json",
@@ -25,9 +44,9 @@ function YourComponent() {
     .then((response) => response.json())
     .then((order) => order.id);
   };
-  const onApprove = (data) => {
+  const onApprove = async (data) => {
      // Order is captured on the server and the response is returned to the browser
-     return fetch("http://localhost:9000/api/orders", {
+     return await fetch("http://localhost:9000/api/v1/order/createorder", {
       method: "POST",
        headers: {
         "Content-Type": "application/json",
@@ -40,8 +59,11 @@ function YourComponent() {
   };
   return (
     <PayPalButton
-      createOrder={(data) => createOrder(data, actions)}
-      onApprove={(data) => onApprove(data, actions)}
+      createOrder={(data) => createOrder(data)}
+      onApprove={(data) => onApprove(data)}
     />
+
   );
 }
+
+export default PayPal

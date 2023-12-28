@@ -33,4 +33,8 @@
 .footer-section.copyright p {
     font-size: 0.8rem;
 }
-  
+@media (max-width: 768px){
+    .footer{
+        flex-direction: column;
+    }
+}

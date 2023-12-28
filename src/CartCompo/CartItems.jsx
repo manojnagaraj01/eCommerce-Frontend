@@ -2,13 +2,23 @@ import React, { useEffect } from "react";
 import Axios from "axios";
 import "./Cart.css";
 import { MdDelete } from "react-icons/md";
+import { Link } from "react-router-dom";
+import PayPal from "./Checkout";
 
 function CartItems() {
   const [cart, setCart] = React.useState([]);
-  const [cartId,setCartId]=React.useState(null)
-  console.log('cart',cart[0]?.cartid)
+  const [cartId, setCartId] = React.useState(null);
+  const [total, setTotal] = React.useState([]);
+  const uniquetotalset=new Set()
+  for(let value of total){
+    uniquetotalset.add(value)
+  }
+  let uniqueArray= Array.from(uniquetotalset)
+  let sumtotal=uniqueArray.reduce((partialSum, a) => partialSum + a, 0)
+  
+  console.log(sumtotal)
+  console.log("cart", cart[0]?.cartid);
   // setCartId(cart[0]?.cartid)
-
 
   useEffect(() => {
     Axios.get("https://ecom-mcpa.onrender.com/api/v1/auth/getcartitems", {
@@ -18,28 +28,30 @@ function CartItems() {
     })
       .then((resp) => {
         const data = resp.data;
-
-        const productDetails = data.map(({_id, cartTotal, products }) => ({
-          // setCartId(_id),
-          cartid :_id,
-          cartTotal,
         
-          products: products.map(
-            ({ count, images, price, product, title, _id }) => ({
-              count,
-              images,
-              price,
-              product,
-              title,
-              orderid: _id,
-            })
-          ),
-          
-          
-        }));
+        const productDetails = data.map(({ _id, cartTotal, products }) => {
+          total.push(cartTotal)
+          console.log("total", total)
+          setTotal(total)
+          return {
+            cartid: _id,
+            cartTotal,
+            products: products.map(
+              ({ count, images, price, product, title, _id }) => ({
+                count,
+                images,
+                price,
+                product,
+                title,
+                orderid: _id,
+              })
+            ),
+          };
+        });
+        
         console.log("cart data", productDetails);
         setCart(productDetails);
-        
+
       })
       .catch((err) => {
         console.log(err);
@@ -50,20 +62,24 @@ function CartItems() {
     // console.log('cartid',cartid)
 
     try {
-      const response = await Axios.delete(`https://ecom-mcpa.onrender.com/api/v1/auth/${cart[0]?.cartid}`, {
-        headers: {
-          authorization: `Bearer ${localStorage.getItem("iShop")}`,
-        },
-      });
+      const response = await Axios.delete(
+        `https://ecom-mcpa.onrender.com/api/v1/auth/${cart[0]?.cartid}`,
+        {
+          headers: {
+            authorization: `Bearer ${localStorage.getItem("iShop")}`,
+          },
+        }
+      );
       console.log(response.data);
     } catch (err) {
       console.log(err);
     }
   };
-const handleDelete = () => {
-  deleteItem();
-};
-
+  const handleDelete = () => {
+    deleteItem();
+  };
+  
+  // console.log(total);
   return (
     <>
       <section className="cart-container">
@@ -95,7 +111,10 @@ const handleDelete = () => {
                             <div className="cart-three">
                               <div>{items.count}</div>
                               <div>
-                                <MdDelete onClick={handleDelete} style={{ color: "red " }} />
+                                <MdDelete
+                                  onClick={handleDelete}
+                                  style={{ color: "red " }}
+                                />
                               </div>
                             </div>
                           </>
@@ -110,16 +129,15 @@ const handleDelete = () => {
               })}
             </div>
             <div className="cart-shopping">
-              <a href="hgh" to="/" className="button">
+              <Link to='/' className="continue">
                 Continue Shopping
-              </a>
+              </Link>
               <div>
-                {cart.map(({cartTotal})=>{
-                  <h4>Subtotal </h4>
-                })}
-                <h4>Shippinng fee</h4>
-                <h4>Coupon </h4>
-                <a href="fhfh">Checkout</a>
+                <h3>Total:{sumtotal}</h3>
+                <h4>Shippinng fee : N/A</h4>
+                <h4>Coupon : Not Applicable</h4>
+               <Link to={`/paypal/${cart.cartid}`}> <button className="checkout" >Checkout</button></Link>
+                {/* <div><PayPal/></div> */}
               </div>
             </div>
           </div>

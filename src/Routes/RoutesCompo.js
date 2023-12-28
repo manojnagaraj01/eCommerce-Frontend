@@ -17,6 +17,8 @@ import Footer from '../Head&Foot/Footer';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CartItems from '../CartCompo/CartItems';
+import PayPal from '../CartCompo/Checkout';
+import Order from '../CartCompo/Order';
 function RoutesCompo() {
     const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -67,6 +69,7 @@ function RoutesCompo() {
             <Route path='/profile' element={<LoginSignup/>}/>
             <Route path='/:id' element={<Dynamic/>}/>
             <Route path='/cart' element={<CartItems/>}/>
+            <Route path='/paypal/:id' element={<Order/>}/>
             
         </Routes>
         <Footer/>
