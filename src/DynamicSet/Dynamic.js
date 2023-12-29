@@ -118,11 +118,11 @@ const Dynamic = () => {
             <p>Price: ${product.price}</p>
             <p>Quantity: {product.quantity}</p>
             <div>Count: 
-              <button onClick={decrement}>-</button>
-              <span>{count}</span>
-              <button onClick={increment}>+</button>
+              <button className="addon" onClick={decrement}>-</button>
+              <span style={{margin:"30px"}}>{count}</span>
+              <button className="addon" onClick={increment}>+</button>
             </div>
-            <button onClick={handleAddToCart} disabled={isAddingToCart}>Add to Cart</button>
+            <button className="addtocart" onClick={handleAddToCart} disabled={isAddingToCart}>Add to Cart</button>
           </div>
         ) : (
           <p>Loading product details...</p>

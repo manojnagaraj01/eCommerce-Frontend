@@ -34,8 +34,8 @@ const LoginSignup = () => {
          dispatch(loginUser(formData));
       }
       navigate("/");
-    } catch (error) {
-      setError(error.message || "An error occurred");
+    } catch (err) {
+      toast(err,'An Error occoured');
     }
 
 
@@ -119,7 +119,7 @@ const LoginSignup = () => {
           </div>
 
           <div className="form-group">
-            {error && <div className="error-message">{error}</div>}
+            {toast && <div className="error-message">{toast}</div>}
             <button className="submit-btn" onClick={handleSubmit}>
               {state ? "Submit" : "Login"}
             </button>

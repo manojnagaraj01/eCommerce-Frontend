@@ -2,13 +2,14 @@ import React, { useEffect } from "react";
 import Axios from "axios";
 import "./Cart.css";
 import { MdDelete } from "react-icons/md";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import PayPal from "./Checkout";
 
 function CartItems() {
   const [cart, setCart] = React.useState([]);
   const [cartId, setCartId] = React.useState(null);
   const [total, setTotal] = React.useState([]);
+  const Navi = useNavigate()
   const uniquetotalset=new Set()
   for(let value of total){
     uniquetotalset.add(value)
@@ -78,7 +79,14 @@ function CartItems() {
   const handleDelete = () => {
     deleteItem();
   };
-  
+  const handleCheckout = ()=>{
+    if(cart.length>0){
+      Navi('/Success')
+    }
+    else{
+      Navi('/')
+    }
+  }
   // console.log(total);
   return (
     <>
@@ -136,7 +144,7 @@ function CartItems() {
                 <h3>Total:{sumtotal}</h3>
                 <h4>Shippinng fee : N/A</h4>
                 <h4>Coupon : Not Applicable</h4>
-               <Link to={`/paypal/${cart.cartid}`}> <button className="checkout" >Checkout</button></Link>
+               <button className="checkout" onClick={handleCheckout}>Checkout</button>
                 {/* <div><PayPal/></div> */}
               </div>
             </div>

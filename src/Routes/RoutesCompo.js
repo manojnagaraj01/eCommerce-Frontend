@@ -69,7 +69,7 @@ function RoutesCompo() {
             <Route path='/profile' element={<LoginSignup/>}/>
             <Route path='/:id' element={<Dynamic/>}/>
             <Route path='/cart' element={<CartItems/>}/>
-            <Route path='/paypal/:id' element={<Order/>}/>
+            <Route path='/Success' element={<Order/>}/>
             
         </Routes>
         <Footer/>
