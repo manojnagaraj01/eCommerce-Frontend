@@ -145,15 +145,14 @@ export default function Header() {
       open={isMenuOpen}
       onClose={handleMenuClose}
     >
-      <div className={!token?"":"showlogout"}>
+      <div className={!token?"":"show"}>
 
       <MenuItem onClick={handleMenuClose}>
-        {" "}
         <Link to="/profile">Sigin/SignUp</Link>
       </MenuItem>
       </div>
 
-      <div className={token?"":"showlogout"}>
+      <div className={token?"":"show"}>
         <MenuItem onClick={handleMenuClose}>
           <div onClick={logoutHandle}>LogOut</div>
         </MenuItem>
